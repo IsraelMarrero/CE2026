@@ -59,9 +59,6 @@ body {
 
     font-weight: bold;
 
-    position: absolute;
-    top: 15px;
-
 }
 
 
@@ -303,7 +300,3 @@ main {
     border-radius: 10px;
 
 }
-
-
-
-/* Efecto de zoom eliminado */
