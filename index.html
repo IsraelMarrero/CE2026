@@ -1,74 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Campeonato de España Futbolchapas 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campeonato de España Futbolchapas 2026</title>
+
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
+
 <body>
 
+    <!-- ========================= -->
     <!-- MENÚ SUPERIOR -->
+    <!-- ========================= -->
+
     <header class="navbar">
+
         <div class="logo">
-            <img src="images/logo.png" alt="Logo Campeonato">
+            <img src="images/logo.png" alt="Logo campeonato">
         </div>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#">Más ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="info.html">Información del evento</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="menu">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="#">
+                Más
+            </a>
+
         </nav>
+
     </header>
 
+
+
+    <!-- ========================= -->
     <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================= -->
+
     <main>
 
-        <section class="main-buttons">
+        <div class="button-grid">
 
-            <a href="individual.html" class="big-button">
-                <img src="images/individual.jpg" alt="">
-                <span>Campeonato de España Individual</span>
-            </a>
+            <!-- INDIVIDUAL -->
 
-            <a href="parejas.html" class="big-button">
-                <img src="images/parejas.jpg" alt="">
-                <span>Campeonato de España por Parejas</span>
-            </a>
+            <button
+                class="main-button"
+                onclick="toggleSubmenu('individual-menu')"
+            >
 
-            <a href="infantil.html" class="big-button">
-                <img src="images/infantil.jpg" alt="">
-                <span>Campeonato de España Infantil</span>
-            </a>
+                <img
+                    src="images/individual.jpg"
+                    alt="Campeonato individual"
+                >
 
-            <a href="equipos.html" class="big-button">
-                <img src="images/equipos.jpg" alt="">
-                <span>Campeonato de España por Equipos</span>
-            </a>
+                <span>
+                    Campeonato Individual
+                </span>
 
-        </section>
+            </button>
 
-        <section class="secondary-buttons">
 
-            <a href="https://maps.app.goo.gl/kkUm6YS1LjLTMc1d8" target="_blank" class="small-button">
+            <div id="individual-menu" class="submenu">
+
+                <a href="grupos-individual.html">
+                    Fase de grupos
+                </a>
+
+                <a href="final-individual.html">
+                    Fase final
+                </a>
+
+            </div>
+
+
+
+            <!-- PAREJAS -->
+
+            <button
+                class="main-button"
+                onclick="toggleSubmenu('parejas-menu')"
+            >
+
+                <img
+                    src="images/parejas.jpg"
+                    alt="Campeonato parejas"
+                >
+
+                <span>
+                    Campeonato por Parejas
+                </span>
+
+            </button>
+
+
+            <div id="parejas-menu" class="submenu">
+
+                <a href="grupos-parejas.html">
+                    Fase de grupos
+                </a>
+
+                <a href="final-parejas.html">
+                    Fase final
+                </a>
+
+            </div>
+
+
+
+            <!-- INFANTIL -->
+
+            <button
+                class="main-button"
+                onclick="toggleSubmenu('infantil-menu')"
+            >
+
+                <img
+                    src="images/infantil.jpg"
+                    alt="Campeonato infantil"
+                >
+
+                <span>
+                    Campeonato Infantil
+                </span>
+
+            </button>
+
+
+            <div id="infantil-menu" class="submenu">
+
+                <a href="grupos-infantil.html">
+                    Fase de grupos
+                </a>
+
+                <a href="final-infantil.html">
+                    Fase final
+                </a>
+
+            </div>
+
+
+
+            <!-- EQUIPOS -->
+
+            <button
+                class="main-button"
+                onclick="location.href='equipos.html'"
+            >
+
+                <img
+                    src="images/equipos.jpg"
+                    alt="Campeonato equipos"
+                >
+
+                <span>
+                    Campeonato por Equipos
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- BOTONES SECUNDARIOS -->
+
+        <div class="secondary">
+
+            <a
+                href="https://maps.google.com"
+                target="_blank"
+            >
                 📍 Lugar de competición
             </a>
 
-            <a href="info.html" class="small-button">
+            <a href="#">
                 ℹ Información del evento
             </a>
 
-        </section>
+        </div>
 
     </main>
+
 
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

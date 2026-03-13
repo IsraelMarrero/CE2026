@@ -1,127 +1,292 @@
-/* ===== CONFIGURACIÓN FONDO ===== */
-
 body {
+
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("../images/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
     color: white;
+
 }
 
 
 
-/* ===== NAVBAR ===== */
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
 
 .navbar {
+
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.85);
+
+    background: black;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+
+    padding: 10px 15px;
+
     z-index: 1000;
+
 }
+
+
 
 .logo img {
-    height: 50px;
+
+    height: 40px;
+
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+
+.menu-icon {
+
+    font-size: 28px;
+    cursor: pointer;
+
 }
 
-.menu li {
-    position: relative;
-}
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
 
-/* Dropdown */
+#menu {
 
-.dropdown-content {
     display: none;
+
     position: absolute;
-    background-color: #333;
-    top: 25px;
-    min-width: 150px;
-    padding: 10px;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+
+    background: #222;
+
 }
 
-.dropdown-content li {
-    list-style: none;
-}
 
-.dropdown:hover .dropdown-content {
+
+#menu a {
+
     display: block;
+
+    padding: 15px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-bottom: 1px solid #333;
+
 }
 
-/* ===== CONTENIDO ===== */
+
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
 
 main {
-    padding-top: 100px;
-    padding-bottom: 50px;
+
+    padding-top: 70px;
+    padding-bottom: 40px;
+
 }
 
-/* Botones grandes */
 
-.main-buttons {
+
+/* ========================= */
+/* BOTONES PRINCIPALES */
+/* ========================= */
+
+.button-grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    padding: 15px;
+
 }
 
-.big-button {
+
+
+.main-button {
+
     position: relative;
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
 
-.big-button img {
+    border: none;
+    padding: 0;
+
+    background: none;
+
     width: 100%;
-    height: 250px;
+
+}
+
+
+
+.main-button img {
+
+    width: 100%;
+    height: 150px;
+
     object-fit: cover;
-    filter: brightness(60%);
+
+    border-radius: 10px;
+
 }
 
-.big-button span {
+
+
+.main-button span {
+
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 1.2em;
+
+    bottom: 10px;
+    left: 15px;
+
+    font-size: 20px;
     font-weight: bold;
+
 }
 
-.big-button:hover {
-    transform: scale(1.03);
+
+
+/* ========================= */
+/* SUBMENUS */
+/* ========================= */
+
+.submenu {
+
+    display: none;
+
+    background: #222;
+
+    margin: 0 15px 10px 15px;
+
+    border-radius: 8px;
+
 }
 
-/* Botones pequeños */
 
-.secondary-buttons {
-    text-align: center;
-    margin-top: 30px;
-}
 
-.small-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #b30000;
-    color: white;
+.submenu a {
+
+    display: block;
+
+    padding: 12px;
+
     text-decoration: none;
+
+    color: white;
+
+    border-bottom: 1px solid #333;
+
+}
+
+
+
+/* ========================= */
+/* BOTONES SECUNDARIOS */
+/* ========================= */
+
+.secondary {
+
+    text-align: center;
+
+    margin: 25px;
+
+}
+
+
+
+.secondary a {
+
+    display: block;
+
+    margin: 10px auto;
+
+    background: #b30000;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    width: 80%;
+
+}
+
+
+
+/* ========================= */
+/* SELECTOR DE GRUPOS */
+/* ========================= */
+
+.group-selector {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px;
+
+}
+
+
+
+.group-selector a {
+
+    background: #333;
+
+    padding: 8px 12px;
+
     border-radius: 5px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ========================= */
+/* IMÁGENES */
+/* ========================= */
+
+.zoom {
+
+    width: 95%;
+
+    display: block;
+
+    margin: 15px auto 40px auto;
+
+    border-radius: 10px;
+
+}
+
+
+
+.zoom:active {
+
+    transform: scale(2);
+
+    position: relative;
+
+    z-index: 2000;
+
 }
