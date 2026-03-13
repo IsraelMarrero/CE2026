@@ -39,6 +39,22 @@ body {
 
 }
 
+.home-button {
+
+    text-decoration: none;
+
+    background: #b30000;
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+}
+
 
 
 .menu-icon {
