@@ -267,7 +267,7 @@ main {
 /* IMÁGENES */
 /* ========================= */
 
-.zoom {
+.group-image {
 
     width: 95%;
 
@@ -281,12 +281,4 @@ main {
 
 
 
-.zoom:active {
-
-    transform: scale(2);
-
-    position: relative;
-
-    z-index: 2000;
-
-}
+/* Efecto de zoom eliminado */
