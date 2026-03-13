@@ -33,7 +33,7 @@ body {
 
 .logo {
     position: absolute;
-    left: 10px;
+    left: 15px;
 }
 
 
@@ -58,6 +58,8 @@ body {
     border-radius: 6px;
 
     font-weight: bold;
+
+    justify-content: center;
 
 }
 
