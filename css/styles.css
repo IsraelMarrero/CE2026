@@ -21,7 +21,7 @@ body {
     top: 0;
     width: 100%;
 
-    background: black;
+    background: rgb(41, 110, 200);
 
     display: flex;
     justify-content: center;
